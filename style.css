@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cantarell:wght@700&display=swap');
+body {
+	height: 100%;
+	background-image: url('./img/back.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.h1 {
+	font-family: 'Anton', sans-serif;
+	color: white;
+	font-size: 130px;
+	height: 200px;
+}
+.h2 {
+	font-family: 'Anton', sans-serif;
+	color: rgb(100,100,100);
+	font-size: 25px;
+	height: 60px;
+}
+.main-img-div {
+	display: flex;
+	margin-left: 10px;
+	justify-content: flex-start;
+	height: 490px;
+	align-items: flex-start;
+}
+.div-login {
+	margin: 0;
+	display: flex;
+	justify-content: flex-end;
+
+}
+.btn-login {
+	background-color: #405cf5;
+	border: 0;
+	appearance: button;
+  	backface-visibility: hidden;
+  	border-radius: 6px;
+  	border-width: 0;
+  	box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  	box-sizing: border-box;
+  	color: #fff;
+  	cursor: pointer;
+	font-size: 110%;
+  	height: 42px;
+  	line-height: 1.15;
+  	margin: 12px 0 0;
+  	outline: none;
+  	overflow: hidden;
+  	padding: 0 25px;
+  	position: relative;
+  	text-align: center;
+  	text-transform: none;
+  	transform: translateZ(0);
+  	transition: all .2s,box-shadow .08s ease-in;
+  	user-select: none;
+  	width: 150px;
+	font-family: 'Anton', sans-serif;
+	margin-right: 15px;
+}
