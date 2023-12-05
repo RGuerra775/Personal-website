@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Cantarell:wght@700&display=swap');
+
+/*===================================== For Desktop =========================== */
+
 body {
 	height: 100%;
 	background-image: url('./img/back.jpg');
@@ -50,7 +53,7 @@ body {
   	cursor: pointer;
 	font-size: 110%;
   	height: 42px;
-  	line-height: 1.15;
+	line-height: 1.15;
   	outline: none;
   	overflow: hidden;
   	padding: 0 25px;
@@ -135,7 +138,78 @@ body {
 	box-shadow: 5px 5px 0px 0px #000003f;
 }
 
-/* Para telemóvel. */
+/*===================================== Login Modal ============================================= */
+.login-div {
+	display: none;
+	width:20vw;
+	height:40vh;
+}
+#main-holder {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	background-color: white;
+	border-radius: 7px;
+	box-shadow: 0px 0px 5px 2px black;
+}
+#login-error-msg-holder {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+}
+#login-error-msg {
+  width: 23%;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #8a0000;
+  border: 1px solid #8a0000;
+  background-color: #e58f8f;
+  opacity: 0;
+}
+#error-msg-second-line {
+  display: block;
+}
+
+#login-form {
+  align-self: flex-start;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.login-form-field::placeholder {
+  color: #3a3a3a;
+}
+
+.login-form-field {
+  border: none;
+  border-bottom: 1px solid #3a3a3a;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  outline: none;
+  padding: 0px 0px 5px 5px;
+}
+
+#login-form-submit {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: #3a3a3a;
+  cursor: pointer;
+  outline: none;
+}
+
+/*===================================== For Mobile ========================================== */
 
 @media only screen and (max-width:768px){
 	body {
