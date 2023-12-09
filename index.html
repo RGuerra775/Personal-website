@@ -16,7 +16,7 @@
 				<img src="./img/logo.png" class="logo">
 			</div>
 			<div class="div-login">
-				<button class="btn-login" onclick="document.getElementById('main-holder').style.display='block'">Login as root</button>
+				<button class="btn-login" onclick="showElement()">Login as root</button>
 			</div>
 		</div>
 		<div class="main-img-div">
@@ -37,14 +37,17 @@
 					<p id="login-error-msg">Invalid Username<span id="error-msg-second-line"> and/or password</span></p>				</div>
 
 				<form id="login-form">
-					<input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
-					<input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
-					<input type="submit" value="Login" id="login-form-submit">
+					<input type="text" name="username-field" id="username-field" class="login-form-field" placeholder="Username">
+					<input type="password" name="password-field" id="password-field" class="login-form-field" placeholder="Password">
+					<div id="btns-forms">
+						<input type="submit" value="Login" id="login-form-submit" onclick="validate()">
+						<input type="submit" value="Cancel" id="cancel-submit">
+					</div>
 				</form>
 			</main>
 		</div>
-		<script>
-			document.querySelector('#login-form').addEventListener("submit", function(event) {
+		<script type="text/javascript">
+			/* document.querySelector('#login-form').addEventListener("submit", function(event) {
 			event.preventDefault();
 			const username = document.querySelector("input[name=username]").value;
 			const password = document.querySelector("input[name=password]").value;
@@ -53,8 +56,34 @@
 			} else {
 				alert("Usuário ou senha inválida!")
 			}
-
-		});
+			});
+		
+			let btn-login = document.querySelector('btn-login');
+			btn-login.addEventListener('click', () => {
+				const element = document.querySelector('.login-div');
+				element.style.display = 'flex';
+			}) */
+			function showElement() {
+        		 	element = document.querySelector('.login-div');
+           			element.style.visibility = 'visible';
+      			  }
+			function hideElement() {
+        		 	element = document.querySelector('.login-div');
+           			element.style.visibility = 'hidden';
+      			  }
+			
+			function validate(){
+					let username = document.getElementById("username-field").value;
+					let password = document.getElementById("password-field").value;
+					if ( username == "root" && password == "root"){
+					alert ("Login successfully");
+					window.location.href = "https://rguerra775.github.io/Personal-website/main/index";
+					return false;
+				}
+					else{
+						alert("You have left attempt;");
+					}
+				}
 		</script>
 	</body>
 </html>

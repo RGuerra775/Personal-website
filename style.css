@@ -135,14 +135,15 @@ body {
 }
 .btn-dev:active {
 	transform: translateY(4px);
-	box-shadow: 5px 5px 0px 0px #000003f;
+	box-shadow: 5px 5px 0px 0px #00003f;
 }
 
 /*===================================== Login Modal ============================================= */
 .login-div {
-	display: none;
+	display: grid;
 	width:20vw;
 	height:40vh;
+	visibility: hidden;
 }
 #main-holder {
 	width: 100%;
@@ -198,7 +199,7 @@ body {
 }
 
 #login-form-submit {
-  width: 100%;
+  width: 3vw;
   padding: 7px;
   border: none;
   border-radius: 5px;
@@ -207,6 +208,22 @@ body {
   background-color: #3a3a3a;
   cursor: pointer;
   outline: none;
+}
+#cancel-submit {
+	width: 3vw;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: #3a3a3a;
+  cursor: pointer;
+  outline: none;
+  margin-left: 1vw;
+}
+#btns-forms {
+	display: flex;
+	justify-content: space-between;
 }
 
 /*===================================== For Mobile ========================================== */
